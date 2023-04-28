@@ -88,7 +88,7 @@ t_boolean melanger_permutation(t_permutation ceci) {
     return TRUE;
 }
 
-t_boolean construire_reciproque_permutation(t_permutation ceci, t_permutation cela) {
+t_boolean reciproque_permutation(t_permutation ceci, t_permutation cela) {
     if (!est_p_permutation_initialise()) {
         return FALSE;
     }
