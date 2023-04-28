@@ -60,11 +60,9 @@ t_boolean debugger_permutation(t_permutation ceci) {
     if (!est_p_permutation_initialise()) {
         return FALSE;
     }
-    printf("[ ");
     for (int i = 0; i < taille_permutation; i++) {
-        printf("%d ", ceci[i]);
+        printf("%d ,", ceci[i]);
     }
-    printf("]\n");
     return TRUE;
 }
 
@@ -80,15 +78,13 @@ t_boolean melanger_permutation(t_permutation ceci) {
         return FALSE;
     }
     for (int i = taille_permutation - 1; i >= 1; i--) {
-        int j = rand() % (i + 1);
-        int temp = ceci[i];
-        ceci[i] = ceci[j];
-        ceci[j] = temp;
+        int j = aleatoire_entre_a_et_b(1, i);
+        echanger_tableau(ceci, i, j);
     }
     return TRUE;
 }
 
-t_boolean construire_reciproque_permutation(t_permutation ceci, t_permutation cela) {
+t_boolean reciproque_permutation(t_permutation ceci, t_permutation cela) {
     if (!est_p_permutation_initialise()) {
         return FALSE;
     }
