@@ -93,3 +93,19 @@ t_boolean reciproque_permutation(t_permutation ceci, t_permutation cela) {
     }
     return TRUE;
 }
+
+t_boolean est_permutation_valide(t_permutation ceci);
+
+t_boolean est_inferieur_strict(t_permutation ceci, t_permutation cela);
+
+t_boolean est_point_fixe_permutation(t_permutation ceci, int position);
+
+int nb_point_fixe(t_permutation ceci);
+
+t_boolean suivante_permutation(t_permutation ceci);
+
+t_boolean copier_suivante_permutation(t_permutation ceci, t_permutation cela);
+
+t_boolean code_point_fixe_permutation(t_permutation ceci, int point_fixe, t_permutation cela);
+
+t_boolean decode_point_fixe_permutation(t_permutation ceci, t_permutation cela, int* point_fixe);
