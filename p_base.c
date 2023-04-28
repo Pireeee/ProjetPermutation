@@ -28,7 +28,7 @@ void croiser_tableau(int* tab, int nb_elements) {
 }
 void copier_tableau(int* tab, int* dans, int nb_elements) {
     for (int i = 0; i < nb_elements; i++) {
-        *(dans + i) = *(tab + i);
+        dans[i] = tab[i];
     }
 }
 void copier_croisement_tableau(int* tab, int* dans, int nb_elements) {
