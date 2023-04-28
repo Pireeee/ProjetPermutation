@@ -94,7 +94,11 @@ t_boolean reciproque_permutation(t_permutation ceci, t_permutation cela) {
     return TRUE;
 }
 
-t_boolean est_permutation_valide(t_permutation ceci);
+t_boolean est_permutation_valide(t_permutation ceci){
+    if (est_p_permutation_initialise()) {
+        return FALSE;
+    }
+}
 
 t_boolean est_inferieur_strict(t_permutation ceci, t_permutation cela);
 
