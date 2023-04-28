@@ -22,7 +22,7 @@
  * 
  * Une fois initialiser, le nombre d'objets N sera <em>fixe</em>.
  * Attention ! Vous <em>devez</em> ne pas utiliser l'affectation sur les permutations.
- * Vous <strong>utiliserez</stong> la fonction de <em>copie</em> prévu à cet effet.
+ * Vous <strong>utiliserez</strong> la fonction de <em>copie</em> prévu à cet effet.
  */
 typedef int* t_permutation;
 #define NON_INITIALISE_PERMUTATION NULL
